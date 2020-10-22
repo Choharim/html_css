@@ -2,14 +2,38 @@
 <html>
     <head>
         <style>
-            ul li { color:red
+            ul li 
+            {color:red; 
 
             }
-            ol li { font-weight: bold;
+            ol li 
+            {font-weight: bold;
 
             }
-            ol > li {text-decoration: underline;
+            ol > li 
+            {text-decoration:line-through; 
+             border:2px solid black;
 
+            }
+            ul,ol 
+            {background-color: powderblue;
+
+            }
+            a 
+            {text-decoration: none; 
+               font-size: 2em;
+            }
+            a:active
+            {color:teal;
+            }
+            a:hover
+            {font-weight: bold;
+            }
+            a:link
+            {color:yellow;
+            }
+            a:visited
+            {color:pupple;
             }
 
         </style>
@@ -26,9 +50,16 @@
             <ul>
                 <li>inner_1</li>
                 <li>inner_2</li>
+                <ul>
+                    <li>super_inner_1</li>
+                    <li>super_inner_2</li>
+                </ul>
             </ul>
             <li>js</li>
         </ol>
 
+        <a href="https://flukeout.github.io/" target="_blank">nothing</a><br>
+        <a href="https://flukeout.github.io/" target="_blank">nothing_2</a><br>
+        <a href="https://flukeout.github." target="_blank">nothing_3</a>
     </body>
 </html>
