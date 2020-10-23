@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .container{
+            background-color: powderblue;
+            display:flex;
+            flex-direction: row;
+            height: 200px;
+        }   
+        .item{
+            background-color: tomato;
+            border:1px solid white;
+            color: white;
+            /*flex-grow: 1; 전체의 container에서 모든 item이 공동으로 1씩 분담하여 자리 차지하겠다*/
+            
+        }
+        .item:nth-child(1){
+            flex-basis: 300px;
+            flex-shrink: 0;/*만약 shirink값이 얘가 1이고 child(2)가 2이면  줄어드는 양의 1/3줄어들고, child(2)는 2/3w줄어든다는 얘기*/
+           
+        }
+        .item:nth-child(2){
+            flex-basis: 300px;
+            flex-shrink: 1;
+           
+           
+        }
+        .container_2{
+            display:flex;
+            flex-direction: row;
+            width:800px;
+            margin:20px;
+            background-color: violet;
+           
+        }
+        .item_2{
+            flex-grow: 1;
+            background-color: yellowgreen;
+            color: white;
+            border:1px solid green;
+        }
+        .item_2:nth-child(2){
+            flex-basis: 100px;
+        }
+       
+        
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">
+                1
+
+            </div>
+            <div class="item">
+                2
+            </div>
+            <div class="item">
+                3
+            </div>
+            <div class="item">
+                4
+            </div>
+            <div class="item">
+                5
+            </div>
+
+        </div>
+        <div class="container_2">
+            <div class="item_2">
+                1
+
+            </div>
+            <div class="item_2">
+                2
+            </div>
+            <div class="item_2">
+                3
+            </div>
+            <div class="item_2">
+                4
+            </div>
+            <div class="item_2">
+                5
+            </div>
+
+        </div>
+    </body>
+</html>
