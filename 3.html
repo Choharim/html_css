@@ -43,10 +43,19 @@
                 left:70px;
                 top:70px;
             }
+            .me_3{
+                position: fixed;
+                left:100px;
+                top:100px;
+                background-color: cadetblue;
+            }
+            
             h2{
                 position: absolute;
-                top:500px;
-
+                width:30%;
+                background-color: cadetblue;
+                top:700px;
+                
             }
 
         </style>
@@ -68,9 +77,15 @@
             <div class="me_2">
                 me2
             </div>
+            <div class="me_3">
+                me3
+            </div>
+            
             
         </div>
-        <h2>relative는 부모를 기준으로 이동, absolute는 html을 기준으로 이동, static은 원래 자기 정해진 자리 <br>
-        근데 부모나 더 상위 조상이 relative이면 아무리 자식이 abolute여도 그 자식은 relative가 되어 그 relative positon을 준 부모나 더 상위 조상을 기준으로 위치됌.</h2>
+        <h2>relative는 부모를 기준으로 이동, absolute는 html을 기준으로 이동, static은 원래 자기 정해진 자리/ <br>
+            자식이 absolute나 (fixed)를 하면 html을 기준으로 (화면상 html을 기준으로) 움직이니까 부모로부터 독립한것이기 때문에 부모의 특징을 가져오지 않고 자기 content너비대로 너비 갖게됨/<br>
+            abolute와 fixed의 차이는 fixed는 움직이는 화면상의 html을 기준으로 위치를 잡는 다는 것/ <br>
+            부모나 더 상위 조상이 relative이면 아무리 자식이 abolute여도 그 자식은 relative가 되어 그 relative positon을 준 부모나 더 상위 조상을 기준으로 위치됌.</h2>
     </body>
 </html>
