@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+            .container{
+                display: flex;
+                flex-direction:column;
+            }
+            header{
+                border-bottom: 2px solid black;
+            }
+            footer{
+                border-top: 2px solid black;
+            }
+            .content{
+                display: flex;
+                flex-direction: row;
+                
+            }
+            nav{
+                border-right: 2px solid black;
+                flex-basis: 150px;
+                flex-shrink:0;
+               
+            }
+            aside{
+                border-left:  2px solid black;
+                flex-basis: 150px;
+                flex-shrink:0;
+                
+            }
+            main{
+                flex-shrink:1;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <header>
+            <h1>생활코딩</h1>
+            </header>
+            <section class="content">
+                <nav>
+                    <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>js</li>
+                    </ul>
+                </nav>
+                <main>
+                생활코딩 ~~~~~~~~~~~~~~~~~~~~~이다.    
+                </main>
+                <aside>
+                AD
+                </aside>
+            </section>
+            <footer>
+                <a href="#">암거나</a>
+
+            </footer>
+        </div>
+    </body>
+</html>
