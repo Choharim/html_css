@@ -2,16 +2,20 @@
 <html>
     <head>
         <style>
-            
+
             .container{
                 display: flex;
                 flex-direction:column;
+                border: 2px solid black;
+                text-align: center;
             }
             header{
                 border-bottom: 2px solid black;
+              
             }
             footer{
                 border-top: 2px solid black;
+               
             }
             .content{
                 display: flex;
@@ -20,19 +24,67 @@
             }
             nav{
                 border-right: 2px solid black;
-                flex-basis: 150px;
+              
+                flex-basis: 300px;
                 flex-shrink:0;
+                order:0;
                
             }
             aside{
                 border-left:  2px solid black;
-                flex-basis: 150px;
+             
+                flex-basis: 300px;
                 flex-shrink:0;
+                order: 2;
                 
             }
             main{
                 flex-shrink:1;
+                order: 1;
             }
+            .stretch{
+                display:flex;
+                flex-direction: row;
+                align-items: stretch;
+                margin:10px;
+                align-items: stretch;
+              
+            }
+            .center{
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin:10px;
+
+            }
+            .flex-start{
+                display:flex;
+                flex-direction: row;
+                align-items: flex-start;
+                margin:10px;
+               
+            }
+            .baseline{
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: baseline;
+                margin:10px;
+
+            }
+            .stretch>div,.center>div,.flex-start>div,.baseline>div{
+              background-color: teal;
+              text-align: center;
+            }
+            div:nth-child(2){
+                width:150px;
+                height: 150px;
+                font-size: 2em;
+            }
+          
+          
+
         </style>
 
     </head>
@@ -42,6 +94,9 @@
             <h1>생활코딩</h1>
             </header>
             <section class="content">
+                <aside>
+                    AD
+                    </aside>
                 <nav>
                     <ul>
                         <li>html</li>
@@ -52,14 +107,38 @@
                 <main>
                 생활코딩 ~~~~~~~~~~~~~~~~~~~~~이다.    
                 </main>
-                <aside>
-                AD
-                </aside>
             </section>
             <footer>
                 <a href="#">암거나</a>
 
             </footer>
         </div>
+        <hr>
+        <div class="stretch">
+            <div>stretch1</div>
+            <div>stretch2</div>
+            <div>stretch3</div>
+            <div>stretch4</div>
+        </div>
+        <div class="center">
+            <div>center1</div>
+            <div>center2</div>
+            <div>center3</div>
+            <div>center4</div>
+        </div>
+        <div class="flex-start">
+            <div>flex-start1</div>
+            <div>flex-start2</div>
+            <div>flex-start3</div>
+            <div>flex-start4</div>
+        </div>
+        <div class="baseline">
+            <div>baseline1</div>
+            <div>baseline2</div>
+            <div>baseline3</div>
+            <div>baselinet4</div>
+        </div>
+
+
     </body>
 </html>
