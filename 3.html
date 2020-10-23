@@ -9,15 +9,44 @@
             margin:10px;
             box-sizing: border-box;
             text-align: center;
+            
 
             }
             #a{
             border:2px solid black;
+            position: static;
+            left:100px;
+            top:100px;
 
             }
             #b{
             border:10px solid red;
             padding: 10px;
+            position: relative;
+            left:100px;
+            top:100px;
+            }
+            div{
+                border:2px solid black;
+
+            }
+            .parent{
+
+            }
+            .me{
+                position:absolute;
+                left:70px;
+                top:70px;
+            }
+            .me_2{
+                position: relative;
+                left:70px;
+                top:70px;
+            }
+            h2{
+                position: absolute;
+                top:500px;
+
             }
 
         </style>
@@ -29,5 +58,19 @@
         <p id="b">
         box sizing
         </p>
+        
+        <div class="parent">
+            parent
+            <div class="me">
+                me
+
+            </div>
+            <div class="me_2">
+                me2
+            </div>
+            
+        </div>
+        <h2>relative는 부모를 기준으로 이동, absolute는 html을 기준으로 이동, static은 원래 자기 정해진 자리 <br>
+        근데 부모나 더 상위 조상이 relative이면 아무리 자식이 abolute여도 그 자식은 relative가 되어 그 relative positon을 준 부모나 더 상위 조상을 기준으로 위치됌.</h2>
     </body>
 </html>
